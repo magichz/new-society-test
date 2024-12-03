@@ -22,12 +22,14 @@
             max-width: 800px;
             margin: 2rem auto;
             padding: 0 1rem;
+            padding-bottom: 6rem;
         }
         section {
             background-color: white;
             padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
         }
         footer {
             text-align: center;
@@ -37,6 +39,21 @@
             position: fixed;
             bottom: 0;
             width: 100%;
+        }
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .value-item {
+            background-color: #f8f8f8;
+            padding: 1rem;
+            border-radius: 4px;
         }
     </style>
 </head>
@@ -48,6 +65,58 @@
         <section>
             <h2>About Us</h2>
             <p>This is a simple test page for our new society project.</p>
+        </section>
+        
+        <section>
+            <h2>Our Mission</h2>
+            <p>To create a more connected and sustainable community through innovation, collaboration, and shared values.</p>
+        </section>
+
+        <section>
+            <h2>Our Values</h2>
+            <div class="values-grid">
+                <div class="value-item">
+                    <h3>Innovation</h3>
+                    <p>Embracing new ideas and technologies</p>
+                </div>
+                <div class="value-item">
+                    <h3>Sustainability</h3>
+                    <p>Creating lasting positive impact</p>
+                </div>
+                <div class="value-item">
+                    <h3>Community</h3>
+                    <p>Building stronger connections</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Get Involved</h2>
+            <p>There are many ways to participate in our community:</p>
+            <ul>
+                <li>Join our monthly meetings</li>
+                <li>Volunteer for community projects</li>
+                <li>Share your ideas and feedback</li>
+                <li>Participate in our events</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div>
+                    <h3>Email</h3>
+                    <p>info@newsociety.org</p>
+                </div>
+                <div>
+                    <h3>Phone</h3>
+                    <p>(555) 123-4567</p>
+                </div>
+                <div>
+                    <h3>Address</h3>
+                    <p>123 Community Street<br>Innovation City, ST 12345</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
